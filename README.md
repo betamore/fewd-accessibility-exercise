@@ -2,7 +2,7 @@
 
 Improved accessibility through semantic markup.
 
-## Improved Accessibility Through Semantic Markup
+## Instructions
 
 1) Fork and clone this repo
 2) Create a new branch off of `master`
