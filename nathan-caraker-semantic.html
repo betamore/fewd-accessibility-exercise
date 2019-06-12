@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Betamore FEWD Course | Accessibility Exercise</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Main Heading</h1>
+      <nav>
+        <li>Navigation Item 1</li>
+        <li>Navigation Item 2</li>
+        <li>Navigation Item 3</li>
+      </nav>
+    </header>
+    <section>
+      <h2>This is the first section of my document.</h2>
+      <p>I'll add another paragraph here too.</p>
+      <ol>
+        <li>Here is</li>
+        <li>a numbered list</li>
+        <li>for you to read</li>
+      </ol>
+      <section>
+        <h3>My Subheading</h3>
+        <p>This is the first subsection of my document. I'd love people to be able to find this content!</p>
+      </section>
+      <section>
+        <h3>Another Subheading</h3>
+        <p>This is the second subsection of my content. I think is more interesting than the last one.</p>
+      </section>
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form class="contact-form" action="nathan-caraker-semantic.html" method="post">
+        <fieldset>
+          <legend>Personal Info:</legend>
+            <!-- Name -->
+            <p>
+              <label for="user-name">Name:</label>
+              <br>
+              <input id="user-name" type="text" name="user-name" value="" placeholder="John Doe">
+            </p>
+            <!-- Email -->
+            <p>
+              <label for="user-email">Email:</label>
+              <br>
+              <input id="user-email" type="email" name="user-email" value="" placeholder="jdoe@example.com">
+            </p>
+            <!-- Phone -->
+            <p>
+              <label for="user-phone">Phone:</label>
+              <br>
+              <input id="user-phone" type="tel" name="user-phone" value="" placeholder="(310) 867-5309">
+            </p>
+        </fieldset>
+        <fieldset>
+          <legend>How Should We Contact You?</legend>
+            <!-- Email : Radio -->
+            <input type="radio" id="perf-email" name="contact-type">
+            <label for="perf-email">Email</label><br/>
+            <!-- Phone : radio -->
+            <input type="radio" id="perf-phone" name="contact-type">
+            <label for="perf-phone">Phone</label><br/>
+        </fieldset>
+        <fieldset>
+          <legend>What is the Best Time to Contact You?</legend>
+            <!-- Morning -->
+            <input type="checkbox" id="time-morning" name="contact-time" value="1">
+            <label for="time-morning">Morning</label><br/>
+            <!-- Afternoon -->
+            <input type="checkbox" id="time-afternoon" name="contact-time" value="2">
+            <label for="time-afternoon">Afternoon</label><br/>
+            <!-- Evening -->
+            <input type="checkbox" id="time-evening" name="contact-time" value="3">
+            <label for="time-evening">Evening</label><br/>
+        </fieldset>
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+          <select class="" name="">
+            <option value="">-- Please choose and option --</option>
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="youtube">YouTube</option>
+            <option value="ad">Ad</option>
+            <option value="friend">From a Friend</option>
+          </select>
+        </fieldset>
+        <p>
+          <button type="submit">Submit Your Info</button>
+        </p>
+      </form>
+    </section>
+  </body>
+</html>
