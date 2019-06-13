@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Betamore FEWD Course | Accessibility Exercise</title>
+    < <style>
+        #submit {
+        display: inline-block;
+        border: 2px solid #333;
+        border-radius: 5px;
+        padding: 5px 10px;
+        }
+        </style>
+</head>
+
+<body>
+    <!--<font size="7">My Main Heading</font>-->
+    <h1>My Main Heading</h1>
+
+    <nav>
+        <ul>
+            <li> Navigation Item 1</li>
+            <li> Navigation Item 2</li>
+            <li> Navigation Item 3</li>
+        </ul>
+    </nav>
+    <section>
+        <p>This is the first section of my document.</p>
+
+        <p>I'll add another paragraph here too.</p>
+        <ul>
+            <ol> Here is</ol>
+            <ol> a numbered list</ol>
+            <ol> for you to read</ol>
+        </ul>
+    </section>
+    <section class="first-sub-section">
+        <h2>My Subheading</h2>
+        <!--<font size="5">My Subheading</font>-->
+
+        <p>This is the first subsection of my document. I'd love people to be able to find this content!</p>
+    </section>
+    <section class="sec-sub-section">
+        <h2>Another Subheading</h2>
+        <!--<font size="5">Another Subheading</font>-->
+
+        <p>This is the second subsection of my content. I think is more interesting than the last one.</p>
+    </section>
+    <strong>Contact Form</strong>
+
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <!--INPUT ENABLES THE USER TO PRESS TAB TO NAVIGATE THROUGH THE FORM-->
+            <p>
+                <label for="name">Enter Your Name:</label> <br>
+                <input type="text" id="name" name="fullname" placeholder="John Doe">
+            </p>
+
+            <p>
+                <label for="email">Enter Your Email Address: </label><br>
+                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+            </p>
+
+            <p>
+                <label for="phone">Enter Your Phone Number: </label><br>
+                <input type="text" name="email" id="phone" placeholder="123-456-7890">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend> How Should We Contact You?</legend>
+            <p>
+                <input type="radio" name="contact" id="pref-email">
+                <label for="pref-email">Email</label>
+
+                <input type="radio" name="contact" id="pref-phone">
+                <label for="pref-phone">Phone</label>
+            </p>
+        </fieldset>
+        <!--Accessible Contact Form-->
+        <fieldset>
+            <legend> Select the Best Time to Contact You</legend>
+
+            <input type="checkbox" name="time" id="Morning">
+            <label for="Morning">Morning</label>
+            <input type="checkbox" name="time" id="Afternoon">
+            <label for="Afternoon">Afternoon</label>
+            <input type="checkbox" name="time" id="Evening">
+            <label for="Evening">Evening</label>
+
+        </fieldset>
+        <fieldset>
+            <legend> Select the Best Time to Contact You</legend>
+            <label for="time-selection">Choose a time:</label>
+            <select id="time-selection">
+                <option value=""></option>
+                <option value="Morning">Morning</option>
+                <option value="Evening">Evening</option>
+                <option value="Afternoon">Afternoon</option>
+
+            </select>
+        </fieldset>
+        <fieldset>
+            <input type="submit" id="submit" value="Submit Your Info">
+        </fieldset>
+    </form>
+</body>
+
+</html>
